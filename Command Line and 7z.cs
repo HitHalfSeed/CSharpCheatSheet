@@ -28,7 +28,7 @@ namespace Random
         {
             var processStartInfo = new ProcessStartInfo("cmd.exe") // using System.Diagnostics
             {
-                Arguments = "/C " + command,
+                Arguments = "/C " + command, // Carries out the command specified by string and then terminates
                 UseShellExecute = false,
                 CreateNoWindow = true
             };
